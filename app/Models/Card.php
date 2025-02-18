@@ -10,4 +10,5 @@ class Card extends Model
     /** @use HasFactory<\Database\Factories\CardFactory> */
     use HasFactory;
     protected $fillable = ['value', 'suit'];
+    public $timestamps = false;
 }

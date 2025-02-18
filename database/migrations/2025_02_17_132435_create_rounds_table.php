@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('rounds', function (Blueprint $table) {
             $table->id();
             $table->foreignId('game_id')->constrained();
-            $table->interger('round_number')->constrained();
+            $table->integer('round_number')->constrained();
             $table->timestamps();
         });
     }
